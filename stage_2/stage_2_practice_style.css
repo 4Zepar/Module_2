@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* -------------------------------- */
+
+table {
+    border-collapse: collapse;
+    width: 600px;
+    height: 400px;
+    margin: 0 auto;
+    border: 2px solid black;
+    table-layout: fixed;
+    overflow: scroll;
+    display: block;
+}
+
+caption {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+thead th {
+    background-color: #d3d3d3;
+    font-style: italic;
+    text-align: center;
+}
+
+tbody th {
+    background-color: #f0f0f0;
+    text-align: right;
+    font-weight: bold;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 10px 20px;
+    max-width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+tfoot td {
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* ----------------------------------------- */
+
+form {
+    width: 400px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 2px solid #333;
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    caret-color: red;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 2px solid #007BFF;
+}
+
+input[disabled] {
+    background: #ddd;
+    cursor: not-allowed;
+}
+
+input[disabled]:hover {
+    cursor: crosshair;
+}
+
+textarea {
+    resize: horizontal;
+    min-height: 60px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: #007BFF;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
