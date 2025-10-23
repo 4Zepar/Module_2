@@ -26,6 +26,7 @@ body {
     background: linear-gradient(135deg, #18a0ff, #9b00af 70%);
     opacity: .9;
 }
+
 .card:active {
     transform: rotateX(10deg) rotateY(10deg) scale(1);
 }
@@ -51,7 +52,6 @@ body {
     margin: 0;
     opacity: .9;
 }
-
 
 @keyframes appear {
     0% {
