@@ -1,10 +1,38 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: "Montserrat", sans-serif;
     color: #c50606;
 }
 
+h2 {
+    font-size: 1.8em;
+    margin-top: 20px;
+}
 
-/* --------------------2 */
+h3 {
+    font-size: 1.4em;
+    margin-top: 15px;
+}
+
+p {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration-color: #ff6600;
+}
 
 .photo-link {
     display: inline-block;
@@ -21,11 +49,8 @@ body {
     object-fit: cover;
 }
 
-/* --------------------------------------------------------- */
-
-.personal-info::first-letter {
+.personal-info > h2::first-letter {
     font-size: 70px;
-    color: red;
     font-weight: bold;
     float: left;
     margin: 0 5px 0 0;
@@ -36,20 +61,6 @@ body {
     padding-left: 10px;
     margin-bottom: 20px;
 }
-
-/* --------------------------------------------------------- */
-
-h2 {
-    font-size: 1.8em;
-    margin-top: 20px;
-}
-
-h3 {
-    font-size: 1.4em;
-    margin-top: 15px;
-}
-
-/* ---------------------------------------------------- */
 
 .work-experience ul {
     list-style: none;
@@ -66,7 +77,6 @@ h3 {
     color: #00cc55;
 }
 
-/* 6. Контакты с SVG и эффектом hover */
 .contacts a svg {
     width: 24px;
     height: 24px;
@@ -75,16 +85,8 @@ h3 {
     vertical-align: middle;
 }
 
-
 .contacts a:hover svg {
     fill: #ff6600;
-}
-
-/* ---------------------------------------- */
-
-p {
-    margin: 10px 0;
-    line-height: 1.5;
 }
 
 .uppercase {
@@ -116,14 +118,3 @@ p {
     padding: 5px;
 }
 
-/* --------------------------------------- */
-
-a {
-    color: #0077cc;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-    text-decoration-color: #ff6600;
-}
