@@ -10,12 +10,12 @@ a {
     text-decoration: none;
 }
 
-/* ---------------------------- */
-
-.header {
-    width: 100%;
+.header .container .logo {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    font-size: 20px;
+    padding: 0 15px 0 0;
 }
 
 .header .container {
@@ -27,18 +27,16 @@ a {
     position: relative;
 }
 
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .nav-menu {
     display: flex;
     justify-content: space-between;
     flex: .5 0;
-}
-
-.header .container .logo {
-    display: flex;
-    align-items: center;
-    font-weight: 800;
-    font-size: 20px;
-    padding: 0 15px 0 0;
 }
 
 img {
@@ -62,7 +60,6 @@ li:hover {
     transition: all .2s ease-in-out;
 }
 
-
 .hamburger {
     display: none;
     font-size: 30px;
@@ -73,8 +70,6 @@ li:hover {
 #menu-toggle {
     display: none;
 }
-
-/* ------------------------------------ */
 
 @media (max-width: 768px) {
     .logo span {
