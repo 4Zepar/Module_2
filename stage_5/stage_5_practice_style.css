@@ -1,0 +1,82 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #323232;
+}
+
+.card {
+    width: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #ff6262, #620019 70%);
+    color: white;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    transform: scale(1);
+    opacity: 1;
+    animation: appear 1s ease;
+    transition: all .5s ease;
+}
+
+.card:hover {
+    transform: scale(1.05) translateY(-10px);
+    background: linear-gradient(135deg, #18a0ff, #9b00af 70%);
+    opacity: .9;
+}
+
+.card:active {
+    transform: rotateX(10deg) rotateY(10deg) scale(1);
+}
+
+.card img {
+    width: 100%;
+    display: block;
+    transform: scale(0);
+    opacity: 0;
+    animation: imgShow 0.8s ease forwards 1s;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-content h2 {
+    margin: 0 0 10px;
+    font-size: 1.4em;
+}
+
+.card-content p {
+    margin: 0;
+    opacity: .9;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        transform: scale(.8) rotateY(0deg);
+    }
+
+    50% {
+        transform: scale(1.05) rotateY(180deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1) rotateY(360deg);
+    }
+}
+
+@keyframes imgShow {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
